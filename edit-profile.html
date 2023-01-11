@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/node_modules//tw-elements/dist/js/index.min.js"></script>
+    <script src="./src/components/layout.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="drawer drawer-mobile">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content bg-white">
+          <div class="grid gap-10 p-4 md:p-10">
+            <!-- Navbar -->
+            <nav class="bg-lightGray w-full rounded-md p-4 md:px-10">
+              <div class="block items-center justify-between sm:flex">
+                <div class="flex items-center gap-4">
+                  <label
+                    role="button"
+                    for="my-drawer-2"
+                    class="btn bg-secondary drawer-button border-none lg:hidden"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="12"
+                      viewBox="0 0 18 12"
+                    >
+                      <g
+                        id="Layer_2"
+                        data-name="Layer 2"
+                        transform="translate(-3 -6)"
+                      >
+                        <g id="menu">
+                          <rect
+                            id="Rectangle_1"
+                            data-name="Rectangle 1"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 11)"
+                          />
+                          <rect
+                            id="Rectangle_2"
+                            data-name="Rectangle 2"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 16)"
+                          />
+                          <rect
+                            id="Rectangle_3"
+                            data-name="Rectangle 3"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 6)"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </label>
+                  <h2>
+                    Welcome,
+                    <span class="text-secondary text-2xl font-bold md:text-4xl"
+                      >Garcia</span
+                    >
+                  </h2>
+                </div>
+                <div class="flex items-center justify-end gap-4">
+                  <!-- notification -->
+                  <div class="dropdown dropdown-bottom dropdown-end">
+                    <label tabindex="0" class="btn m-1"
+                      ><img
+                        src="./src/assets/images/notification.svg"
+                        alt="notification icon"
+                    /></label>
+                    <ul
+                      tabindex="0"
+                      class="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+                    >
+                      <li><a>Item 1</a></li>
+                      <li><a>Item 2</a></li>
+                    </ul>
+                  </div>
+                  <!-- settings -->
+                  <div class="dropdown dropdown-bottom dropdown-end text-dark">
+                    <label tabindex="0" class="btn p-0 pr-2">Settings</label>
+                    <svg
+                      id="Group_4872"
+                      data-name="Group 4872"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20"
+                      height="11.312"
+                      viewBox="0 0 20 11.312"
+                    >
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect
+                            id="Rectangle_4594"
+                            data-name="Rectangle 4594"
+                            width="20"
+                            height="11.312"
+                            transform="translate(0 0)"
+                            fill="none"
+                          />
+                        </clipPath>
+                      </defs>
+                      <g
+                        id="Group_4871"
+                        data-name="Group 4871"
+                        clip-path="url(#clip-path)"
+                      >
+                        <path
+                          id="Path_15114"
+                          data-name="Path 15114"
+                          d="M8.341,10.552a2.188,2.188,0,0,0,3.316,0L19.5,1.842C20.411.825,20.047,0,18.681,0H1.317C-.049,0-.407.833.5,1.842Z"
+                          fill="#1faa9e"
+                        />
+                      </g>
+                    </svg>
+
+                    <ul
+                      tabindex="0"
+                      class="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+                    >
+                      <li><a href="settings.html">settings</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="container-body">
+              <h3>Add Project Details</h3>
+              <hr class="my-5" />
+              <div class="project-name">
+                <ul
+                  class="nav nav-tabs mb-4 flex list-none flex-row flex-wrap gap-4 border-b-0 pl-0"
+                  id="tabs-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <a
+                      href="#tabs-home"
+                      class="nav-item-ds active"
+                      id="tabs-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tabs-home"
+                      role="tab"
+                      aria-controls="tabs-home"
+                      aria-selected="true"
+                      >Lintly</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      href="#tabs-profile"
+                      class="nav-item-ds"
+                      id="tabs-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tabs-profile"
+                      role="tab"
+                      aria-controls="tabs-profile"
+                      aria-selected="false"
+                      >Elusmod</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      href="#tabs-messages"
+                      class="nav-item-ds"
+                      id="tabs-messages-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tabs-messages"
+                      role="tab"
+                      aria-controls="tabs-messages"
+                      aria-selected="false"
+                      >Commodo</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      href="#tabs-contact"
+                      class="nav-item-ds"
+                      id="tabs-contact-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#tabs-contact"
+                      role="tab"
+                      aria-controls="tabs-contact"
+                      aria-selected="false"
+                      >Dolore</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="tabs-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="tabs-home"
+                    role="tabpanel"
+                    aria-labelledby="tabs-home-tab"
+                  >
+                    <form action="">
+                      <div class="grid">
+                        <div class="grid gap-2">
+                          <label for="fn">Project name</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Save
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="fn">Add source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="flex flex-col gap-4 md:flex-row">
+                                <select class="select w-auto md:w-[500px]">
+                                  <option disabled selected>
+                                    select source
+                                  </option>
+                                  <option>List 1</option>
+                                  <option>List 2</option>
+                                  <option>List 3</option>
+                                  <option>List 4</option>
+                                </select>
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="as">Added Source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="ak">Add Keyword</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="ak"
+                                  type="text"
+                                  placeholder="keyword "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-5" />
+                      <div class="grid gap-2">
+                        <label for="adk">Added Keyword</label>
+                        <div
+                          class="flex flex-col items-end gap-6 md:flex-row md:gap-10"
+                        >
+                          <div class="w-full md:flex-auto">
+                            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-none">
+                            <button class="btn bg-primary px-10" type="button">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-10 text-center">
+                        <button
+                          class="btn bg-primary px-16 text-white"
+                          type="submit"
+                        >
+                          Complete
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="tabs-profile"
+                    role="tabpanel"
+                    aria-labelledby="tabs-profile-tab"
+                  >
+                    <form action="">
+                      <div class="grid">
+                        <div class="grid gap-2">
+                          <label for="fn">Project name</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Save
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="fn">Add source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="flex flex-col gap-4 md:flex-row">
+                                <select class="select w-auto md:w-[500px]">
+                                  <option disabled selected>
+                                    select source
+                                  </option>
+                                  <option>List 1</option>
+                                  <option>List 2</option>
+                                  <option>List 3</option>
+                                  <option>List 4</option>
+                                </select>
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="as">Added Source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="ak">Add Keyword</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="ak"
+                                  type="text"
+                                  placeholder="keyword "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-5" />
+                      <div class="grid gap-2">
+                        <label for="adk">Added Keyword</label>
+                        <div
+                          class="flex flex-col items-end gap-6 md:flex-row md:gap-10"
+                        >
+                          <div class="w-full md:flex-auto">
+                            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-none">
+                            <button class="btn bg-primary px-10" type="button">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-10 text-center">
+                        <button
+                          class="btn bg-primary px-16 text-white"
+                          type="submit"
+                        >
+                          Complete
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="tabs-messages"
+                    role="tabpanel"
+                    aria-labelledby="tabs-profile-tab"
+                  >
+                    <form action="">
+                      <div class="grid">
+                        <div class="grid gap-2">
+                          <label for="fn">Project name</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Save
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="fn">Add source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="flex flex-col gap-4 md:flex-row">
+                                <select class="select w-auto md:w-[500px]">
+                                  <option disabled selected>
+                                    select source
+                                  </option>
+                                  <option>List 1</option>
+                                  <option>List 2</option>
+                                  <option>List 3</option>
+                                  <option>List 4</option>
+                                </select>
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="as">Added Source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="ak">Add Keyword</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="ak"
+                                  type="text"
+                                  placeholder="keyword "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-5" />
+                      <div class="grid gap-2">
+                        <label for="adk">Added Keyword</label>
+                        <div
+                          class="flex flex-col items-end gap-6 md:flex-row md:gap-10"
+                        >
+                          <div class="w-full md:flex-auto">
+                            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-none">
+                            <button class="btn bg-primary px-10" type="button">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-10 text-center">
+                        <button
+                          class="btn bg-primary px-16 text-white"
+                          type="submit"
+                        >
+                          Complete
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="tabs-contact"
+                    role="tabpanel"
+                    aria-labelledby="tabs-contact-tab"
+                  >
+                    <form action="">
+                      <div class="grid">
+                        <div class="grid gap-2">
+                          <label for="fn">Project name</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Save
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="fn">Add source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="flex flex-col gap-4 md:flex-row">
+                                <select class="select w-auto md:w-[500px]">
+                                  <option disabled selected>
+                                    select source
+                                  </option>
+                                  <option>List 1</option>
+                                  <option>List 2</option>
+                                  <option>List 3</option>
+                                  <option>List 4</option>
+                                </select>
+                                <input
+                                  id="fn"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="as">Added Source</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="as"
+                                  type="text"
+                                  placeholder=" eg:Project one "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="grid gap-2">
+                          <label for="ak">Add Keyword</label>
+                          <div
+                            class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
+                          >
+                            <div class="w-full md:flex-auto">
+                              <div class="grid gap-2">
+                                <input
+                                  id="ak"
+                                  type="text"
+                                  placeholder="keyword "
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-none">
+                              <button
+                                class="btn bg-primary px-10"
+                                type="button"
+                              >
+                                add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-5" />
+                      <div class="grid gap-2">
+                        <label for="adk">Added Keyword</label>
+                        <div
+                          class="flex flex-col items-end gap-6 md:flex-row md:gap-10"
+                        >
+                          <div class="w-full md:flex-auto">
+                            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                              <input
+                                id="adk"
+                                type="text"
+                                placeholder="keyword "
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-none">
+                            <button class="btn bg-primary px-10" type="button">
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-10 text-center">
+                        <button
+                          class="btn bg-primary px-16 text-white"
+                          type="submit"
+                        >
+                          Complete
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-2" class="drawer-overlay"></label>
+          <ul class="menu text-dark bg-primary w-80 p-4">
+            <!-- Sidebar content here -->
+            <a href="#" class="flex items-center justify-center pb-10 pt-5">
+              <img src="./src/assets/images/logo.svg" alt="logo" />
+            </a>
+            <div class="sidebarnav flex flex-col justify-between">
+              <aside>
+                <ul>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="home.html"
+                    >
+                      <img src="./src/assets/images/home.svg" alt="home icon" />
+                      <span class="mx-4 font-medium">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="leads.html"
+                    >
+                      <img
+                        src="./src/assets/images/leads.svg"
+                        alt="leads icon"
+                      />
+                      <span class="mx-4 font-medium">Leads</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="tips-faq.html"
+                    >
+                      <img
+                        src="./src/assets/images/tips.svg"
+                        alt="tips & faq icon"
+                      />
+                      <span class="mx-4 font-medium">Tips & FAQs</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="index.html"
+                    >
+                      <img
+                        src="./src/assets/images/project.svg"
+                        alt="project icon"
+                      />
+                      <span class="mx-4 font-medium">Projects</span>
+                    </a>
+                  </li>
+                </ul>
+                <hr class="border-secondary my-8" />
+                <div class="absolute bottom-4">
+                  <ul>
+                    <li>
+                      <a
+                        class="flex items-center rounded-md px-4 py-2 text-white"
+                        href="add-project.html"
+                      >
+                        <img src="./src/assets/images/add.svg" alt="add icon" />
+                        <span class="mx-4 font-medium">Add project</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="active flex items-center rounded-md px-4 py-2 text-white"
+                        href="edit-project.html"
+                      >
+                        <img
+                          src="./src/assets/images/edit.svg"
+                          alt="edit icon"
+                        />
+                        <span class="mx-4 font-medium">Edit project</span>
+                      </a>
+                    </li>
+                    <hr class="border-secondary my-4" />
+                    <li>
+                      <a
+                        class="flex items-center rounded-md px-4 py-2 text-white"
+                        href="#"
+                      >
+                        <img
+                          src="./src/assets/images/email.svg"
+                          alt="email icon"
+                        />
+                        <span class="mx-4 font-medium">Support via email</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+</html>

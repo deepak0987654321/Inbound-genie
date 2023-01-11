@@ -1,7 +1,206 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+body {
+  @apply bg-white !text-base text-black;
+}
+h1 {
+  @apply text-4xl font-bold md:text-6xl;
+}
+h2 {
+  @apply text-2xl font-bold md:text-4xl;
+}
+h3 {
+  @apply text-xl font-bold md:text-3xl;
+}
+h4 {
+  @apply text-lg md:text-xl;
+}
+h5 {
+  @apply text-base md:text-lg;
+}
+h6 {
+  @apply text-sm md:text-base;
+}
+p {
+  @apply text-sm md:text-base;
+}
+span {
+  @apply text-sm md:text-base;
+}
 a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+  @apply text-sm md:text-base;
+}
+ul {
+  @apply text-sm md:text-base;
+}
+li {
+  @apply text-sm md:text-base;
+}
+label {
+  @apply text-base font-bold;
+}
+
+.hide-svg svg {
+  @apply hidden;
+}
+.dropdown {
+  @apply flex items-center;
+}
+.dropdown label {
+  @apply border-none !bg-transparent text-black;
+}
+.dropdown-content {
+  @apply bg-white;
+}
+.container-body form input {
+  @apply input input-bordered input-primary w-full !border-black bg-white;
+}
+.container-body form select {
+  @apply input input-bordered input-primary !border-black bg-white;
+}
+table tr td {
+  @apply border border-black;
+}
+.btn {
+  @apply text-white;
+}
+.btn.btn-outline {
+  @apply !text-black;
+}
+.tab {
+  @apply p-0;
+}
+.tab-menu ul {
+  @apply my-10 p-0;
+}
+.tab-menu ul li {
+  @apply inline-flex list-none 	gap-4;
+}
+.tab-menu ul li a {
+  @apply bg-lightGray mx-auto min-w-[200px] rounded-md px-8 py-5 text-center text-black no-underline;
+}
+.tab-menu ul li a.active-a {
+  @apply bg-secondary text-white;
+}
+.tab {
+  @apply hidden;
+}
+.tab-active {
+  @apply block;
+}
+
+.card {
+  @apply rounded-md bg-white p-5 text-left shadow-md;
+}
+
+/* Landing page */
+
+.bg-img {
+  @apply bg-hero-background h-[800px] bg-cover bg-no-repeat;
+  background-color: transparent;
+}
+
+.nav {
+  @apply relative
+      flex
+      w-full flex-wrap
+      items-center
+      justify-between
+      py-4;
+}
+.nav-container {
+  @apply flex w-full flex-wrap items-center justify-between px-6;
+}
+
+.nav-tog {
+  @apply border-0
+          bg-transparent py-2
+          px-2.5
+          hover:no-underline
+          hover:shadow-none;
+}
+
+.negative-block {
+  @apply mx-auto -mt-[400px] w-full px-5 text-center;
+}
+.negative-block img {
+  @apply mx-auto;
+}
+
+.social-block {
+  @apply flex flex-wrap items-center justify-between;
+}
+.social-block span {
+  @apply text-primary mx-4 my-4 text-center md:my-10;
+  flex: 1 0 21%;
+}
+
+.container-fluid {
+  @apply mx-auto max-w-7xl;
+}
+
+.divider:after {
+  @apply !bg-white bg-opacity-60;
+}
+
+.divider:before {
+  @apply !bg-white bg-opacity-60;
+}
+
+.section-pattern {
+  @apply bg-pattern bg-cover bg-no-repeat;
+}
+
+.sec-img img {
+  @apply w-auto md:w-[450px];
+}
+.logo-block img {
+  @apply mx-auto;
+}
+.menu-block {
+  @apply text-center;
+}
+.menu-block ul {
+  @apply mx-auto inline-flex gap-4 py-4 md:flex md:py-0;
+}
+
+.nav.nav-items li a {
+  @apply nav-link
+                                  my-2
+                                  block
+                                  border-x-0
+                                  border-t-0
+                                  border-b-2
+                                  border-transparent px-6 py-3 text-xs
+                                  font-medium
+                                  uppercase
+                                  leading-tight
+                                  hover:border-transparent hover:bg-gray-100
+                                  focus:border-transparent;
+}
+.nav {
+  @apply !justify-start;
+}
+.nav-item-ds {
+  @apply nav-link
+      my-2
+      block
+      border-x-0
+      border-t-0 border-b-2 border-transparent px-6
+      py-3
+      text-xs
+      font-medium
+      uppercase leading-tight
+      hover:border-transparent
+      hover:bg-gray-100 focus:border-transparent;
+}
+.nav-tabs .nav-item-ds.active {
+  @apply border-0 border-b border-black text-black;
+}
+
+.menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
+  @apply !bg-secondary text-white;
 }

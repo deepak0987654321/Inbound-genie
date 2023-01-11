@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="/node_modules//tw-elements/dist/js/index.min.js"></script>
+    <script src="./src/components/layout.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="drawer drawer-mobile">
+            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content bg-white">
+                <div class="grid gap-10 p-4 md:p-10 ">
+                    <!-- Navbar -->
+                    <nav class=" w-full bg-lightGray p-4 md:px-10 rounded-md">
+                        <div class="block  sm:flex items-center justify-between">
+                            <div class="flex gap-4 items-center">
+                                <label role="button" for="my-drawer-2"
+                                    class="btn bg-secondary border-none drawer-button lg:hidden"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                                        <g id="Layer_2" data-name="Layer 2" transform="translate(-3 -6)">
+                                            <g id="menu">
+                                                <rect id="Rectangle_1" data-name="Rectangle 1" width="18" height="2"
+                                                    rx="0.95" transform="translate(3 11)" />
+                                                <rect id="Rectangle_2" data-name="Rectangle 2" width="18" height="2"
+                                                    rx="0.95" transform="translate(3 16)" />
+                                                <rect id="Rectangle_3" data-name="Rectangle 3" width="18" height="2"
+                                                    rx="0.95" transform="translate(3 6)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </label>
+                                <h2>Welcome, <span class="text-secondary text-2xl font-bold md:text-4xl">Garcia</span>
+                                </h2>
+                            </div>
+                            <div class="flex justify-end gap-4 items-center">
+                                <!-- notification -->
+                                <div class="dropdown dropdown-bottom dropdown-end">
+                                    <label tabindex="0" class="btn m-1"><img src="./src/assets/images/notification.svg"
+                                            alt="notification icon"></label>
+                                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                        <li><a>Item 1</a></li>
+                                        <li><a>Item 2</a></li>
+                                    </ul>
+                                </div>
+                                <!-- settings -->
+                                <div class="dropdown dropdown-bottom dropdown-end text-dark">
+                                    <label tabindex="0" class="btn p-0 pr-2">Settings</label>
+                                    <svg id="Group_4872" data-name="Group 4872" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="11.312"
+                                        viewBox="0 0 20 11.312">
+                                        <defs>
+                                            <clipPath id="clip-path">
+                                                <rect id="Rectangle_4594" data-name="Rectangle 4594" width="20"
+                                                    height="11.312" transform="translate(0 0)" fill="none" />
+                                            </clipPath>
+                                        </defs>
+                                        <g id="Group_4871" data-name="Group 4871" clip-path="url(#clip-path)">
+                                            <path id="Path_15114" data-name="Path 15114"
+                                                d="M8.341,10.552a2.188,2.188,0,0,0,3.316,0L19.5,1.842C20.411.825,20.047,0,18.681,0H1.317C-.049,0-.407.833.5,1.842Z"
+                                                fill="#1faa9e" />
+                                        </g>
+                                    </svg>
+
+                                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                        <li><a href="settings.html">settings</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container-body">
+                        <h3>settings</h3>
+                        <hr class="my-5">
+                        <form action="">
+                            <div class="grid">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                                    <div class="grid gap-2">
+                                        <label for="fn">Name</label>
+                                        <input id="fn" type="text" placeholder="Type here" />
+                                    </div>
+                                    <div class="grid gap-2">
+                                        <label for="fn">Name</label>
+                                        <input id="fn" type="text" placeholder="Type here" />
+                                    </div>
+                                </div>
+                                <hr class="my-5">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                                    <div class="grid gap-2">
+                                        <label for="op">Enter old password</label>
+                                        <input id="op" type="text" placeholder="Type here" />
+                                    </div>
+                                    <div class="block">
+
+                                    </div>
+                                    <div class="grid gap-2">
+                                        <label for="np">Enter new password</label>
+                                        <input id="np" type="text" placeholder="Type here" />
+                                    </div>
+                                    <div class="grid gap-2">
+                                        <label for="cnp">Confirm new password</label>
+                                        <input id="cnp" type="text" placeholder="Type here" />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="text-center my-10">
+
+                                <button class="btn px-16 text-white bg-primary" type="submit">Save</button>
+                            </div>
+                        </form>
+                        <div class="download-block mt-5">
+                            <p>Plan: placeat facere - Starter Plan <a href="">Change plan</a> </p>
+                            <div class="h-4"></div>
+                            <!-- table -->
+                            <div class="flex flex-col">
+                                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                    <div class="py-2 inline-block w-full sm:px-6 lg:px-8">
+                                        <div class="overflow-hidden">
+                                            <table class="min-w-full border border-black text-center">
+                                                <thead class="border-b">
+                                                    <tr>
+                                                        <td class="text-base font-medium px-6 py-4 border-r">
+                                                            November 20th 2021
+                                                        </td>
+                                                        <td class="text-base font-medium px-6 py-4 border-r">
+                                                            Professional account (Month, USD)
+                                                        </td>
+                                                        <td class="text-base font-medium px-6 py-4 border-r">
+                                                            USD 42.00
+                                                        </td>
+                                                        <td class="text-base font-medium px-6 py-4">
+                                                            <a href="">Download as PDF</a>
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="border-b">
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-base font-medium border-r">
+                                                            October 20th 2021</td>
+                                                        <td
+                                                            class="text-base font-light px-6 py-4 whitespace-nowrap border-r">
+                                                            Professional account (Month, USD)
+                                                        </td>
+                                                        <td
+                                                            class="text-base font-light px-6 py-4 whitespace-nowrap border-r">
+                                                            USD 20.00
+                                                        </td>
+                                                        <td class="text-base font-light px-6 py-4 whitespace-nowrap">
+                                                            <a href="">Download as PDF</a>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="drawer-side">
+                <label for="my-drawer-2" class="drawer-overlay"></label>
+                <ul class="menu p-4 w-80 text-dark bg-primary">
+                    <!-- Sidebar content here -->
+                    <a href="#" class="flex items-center justify-center pb-10 pt-5">
+                        <img src="./src/assets/images/logo.svg" alt="logo">
+                    </a>
+                    <div class="flex flex-col justify-between sidebarnav">
+                        <aside>
+                            <ul>
+                                <li>
+                                    <a class="flex items-center px-4 py-2 text-white rounded-md " href="home.html">
+                                        <img src="./src/assets/images/home.svg" alt="home icon">
+                                        <span class="mx-4 font-medium">Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center px-4 py-2 text-white rounded-md " href="leads.html">
+                                        <img src="./src/assets/images/leads.svg" alt="leads icon">
+                                        <span class="mx-4 font-medium">Leads</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center px-4 py-2 text-white rounded-md " href="tips-faq.html">
+                                        <img src="./src/assets/images/tips.svg" alt="tips & faq icon">
+                                        <span class="mx-4 font-medium">Tips & FAQs</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center px-4 py-2 text-white rounded-md " href="index.html">
+                                        <img src="./src/assets/images/project.svg" alt="project icon">
+                                        <span class="mx-4 font-medium">Projects</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr class="border-secondary my-8">
+                            <div class="absolute bottom-4">
+                                <ul>
+                                    <li>
+                                        <a class="flex items-center px-4 py-2 text-white rounded-md"
+                                            href="add-project.html">
+                                            <img src="./src/assets/images/add.svg" alt="add icon">
+                                            <span class="mx-4 font-medium">Add project</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center px-4 py-2 text-white rounded-md "
+                                            href="edit-project.html">
+                                            <img src="./src/assets/images/edit.svg" alt="edit icon">
+                                            <span class="mx-4 font-medium">Edit project</span>
+                                        </a>
+                                    </li>
+                                    <hr class="border-secondary my-4">
+                                    <li>
+                                        <a class="flex items-center px-4 py-2 text-white rounded-md " href="#">
+                                            <img src="./src/assets/images/email.svg" alt="email icon">
+                                            <span class="mx-4 font-medium">Support via email</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="./src/main.js"></script>
+
+</html>
