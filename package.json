@@ -4,7 +4,7 @@
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env TAILWIND_MODE=build vite build",
     "serve": "vite preview",
-    "tailwind": "npx tailwindcss -i ./src/index.css -o ./tailwind.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
