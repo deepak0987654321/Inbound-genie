@@ -66,6 +66,11 @@ table tr td {
 .btn {
   @apply text-white;
 }
+
+.btn:hover,
+.btn-active {
+  @apply !bg-secondary !border-secondary;
+}
 .btn.btn-outline {
   @apply !text-black;
 }
@@ -92,7 +97,7 @@ table tr td {
 }
 
 .card {
-  @apply rounded-md bg-white p-5 text-left shadow-md;
+  @apply webkit-shadow rounded-md bg-white p-5 text-left;
 }
 
 /* Landing page */
@@ -203,4 +208,21 @@ table tr td {
 .menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
 .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
   @apply !bg-secondary text-white;
+}
+.sidebarnav li a span {
+  @apply !text-sm;
+}
+
+.webkit-shadow {
+  -webkit-box-shadow: 13px 6px 31px -11px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 13px 6px 31px -11px rgba(0, 0, 0, 0.18);
+  box-shadow: 13px 6px 31px -11px rgba(0, 0, 0, 0.18);
+}
+
+.container-body form input:focus {
+  @apply !outline-secondary !outline-2;
+}
+
+.container-body form select:focus {
+  @apply outline-secondary !outline-2;
 }
