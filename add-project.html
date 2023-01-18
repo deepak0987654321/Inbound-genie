@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Add project</title>
     <link rel="stylesheet" href="./tailwind.css" />
     <script src="./node_modules//tw-elements/dist/js/index.min.js"></script>
   </head>
@@ -143,7 +143,7 @@
                     <div
                       class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
                     >
-                      <div class="w-full md:flex-auto">
+                      <div class="form-group w-full md:flex-auto">
                         <div class="grid gap-2">
                           <input
                             id="fn"
@@ -165,7 +165,7 @@
                     <div
                       class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
                     >
-                      <div class="w-full md:flex-auto">
+                      <div class="form-group w-full md:flex-auto">
                         <div class="flex flex-col gap-4 md:flex-row">
                           <input
                             id="fn"
@@ -187,7 +187,7 @@
                     <div
                       class="flex flex-col items-center gap-6 md:flex-row md:gap-10"
                     >
-                      <div class="w-full md:flex-auto">
+                      <div class="form-group w-full md:flex-auto">
                         <div class="grid gap-2">
                           <input id="ak" type="text" placeholder="keyword " />
                         </div>
@@ -198,6 +198,50 @@
                         </button>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="my-3 flex items-center gap-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input checked:bg-secondary checked:border-secondary float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-700 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 focus:outline-none"
+                      type="checkbox"
+                      value=""
+                      id="CheckDefault"
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="CheckDefault"
+                    >
+                      Exact match
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input checked:bg-secondary checked:border-secondary float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-700 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 focus:outline-none"
+                      type="checkbox"
+                      value=""
+                      id="contains"
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="contains"
+                    >
+                      Contains
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input checked:bg-secondary checked:border-secondary float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-700 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 focus:outline-none"
+                      type="checkbox"
+                      value="questionmark"
+                      id=""
+                    />
+                    <label
+                      class="form-check-label inline-block text-gray-800"
+                      for="questionmark"
+                    >
+                      Question mark
+                    </label>
                   </div>
                 </div>
                 <div class="my-10 text-center">

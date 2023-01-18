@@ -54,20 +54,23 @@ label {
 .dropdown-content {
   @apply bg-white;
 }
-.container-body form input {
-  @apply input input-bordered input-primary w-full !border-black bg-white;
+.form-group input {
+  @apply input input-bordered input-primary !h-10 w-full !border-black bg-white;
 }
-.container-body form select {
-  @apply input input-bordered input-primary !border-black bg-white;
+.form-group select {
+  @apply input input-bordered input-primary !h-10 !border-black bg-white;
 }
+
 table tr td {
   @apply border border-black;
 }
 .btn {
-  @apply text-white;
+  @apply !h-10 !min-h-[40px] text-white;
 }
 
-.btn:hover,
+.btn:hover {
+  @apply !bg-secondary !border-secondary;
+}
 .btn-active {
   @apply !bg-secondary !border-secondary;
 }
@@ -225,4 +228,8 @@ table tr td {
 
 .container-body form select:focus {
   @apply outline-secondary !outline-2;
+}
+
+.btn-link {
+  @apply !text-secondary !font-medium hover:!border-none hover:!bg-transparent;
 }
