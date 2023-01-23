@@ -9,8 +9,8 @@ class Sources extends HTMLElement {
                   <div class="flex items-center justify-between pb-2">
                     <div class="text-lg font-bold">Sources</div>
                     <div class="flex gap-4">
-                      <button class="btn btn-sm btn-link">Add</button>
-                      <button class="btn btn-sm btn-link">Edit</button>
+                      <button class="btn btn-sm btn-outline border border-secondary">Add</button>
+                      <button class="btn btn-sm btn-outline border border-secondary">Edit</button>
                     </div>
                   </div>
                   <div class="block">

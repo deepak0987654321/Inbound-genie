@@ -58,7 +58,7 @@ label {
   @apply input input-bordered input-primary !h-10 w-full !border-black bg-white;
 }
 .form-group select {
-  @apply input input-bordered input-primary !h-10 !border-black bg-white;
+  @apply input input-bordered input-primary !h-10 !min-h-[40px] !border-black bg-white;
 }
 
 table tr td {
@@ -197,7 +197,7 @@ table tr td {
       block
       border-x-0
       border-t-0 border-b-2 border-transparent px-6
-      py-3
+      py-2
       text-xs
       font-medium
       uppercase leading-tight
@@ -236,3 +236,10 @@ table tr td {
 .btn-link {
   @apply !text-secondary !font-medium hover:!border-none hover:!bg-transparent;
 }
+
+ .btn-outline {
+  @apply  hover:!text-white;
+ }
+ .dropdown label {
+  @apply cursor-pointer hover:!text-primary;
+ }
