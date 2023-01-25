@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 body {
-  @apply bg-white !text-base text-black;
+  @apply bg-white !text-base !font-base text-black;
 }
 h1 {
   @apply text-4xl font-bold md:text-6xl;
@@ -69,6 +70,9 @@ table tr td {
 }
 
 .btn:hover {
+  @apply !bg-secondary !border-secondary;
+}
+.btn-sm:hover {
   @apply !bg-secondary !border-secondary;
 }
 .btn-active {
@@ -216,7 +220,7 @@ table tr td {
   @apply !bg-secondary text-white;
 }
 .sidebarnav li a span {
-  @apply !text-sm;
+  @apply !text-base;
 }
 
 .webkit-shadow {
@@ -242,4 +246,11 @@ table tr td {
  }
  .dropdown label {
   @apply cursor-pointer hover:!text-primary;
+ }
+ .btn-link-sm {
+  @apply btn-sm btn-outline border border-secondary !h-7 !min-h-[28px] rounded-md text-black; 
+ }
+
+ .form-check-label{
+  @apply !font-normal;
  }

@@ -14,6 +14,9 @@ module.exports = {
         "hero-background": "url('/src/assets/images/header-bg.svg')",
         pattern: "url('/src/assets/images/pattern.svg')",
       },
+      fontFamily: {
+      base: ["Rubik", "sans-serif"],
+    },
     },
   },
   plugins: [require("tw-elements/dist/plugin"), require("daisyui")],
