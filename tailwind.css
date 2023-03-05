@@ -16760,7 +16760,7 @@ table tr td{
 
 .bg-img{
   height: 800px;
-  background-image: url('/src/assets/images/header-bg.svg');
+  background-image: url('./src/assets/images/header-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -17631,7 +17631,7 @@ table tr td{
 }
 
 .bg-image{
-  background-image: url('/src/assets/images/bg.svg');
+  background-image: url('./src/assets/images/bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
