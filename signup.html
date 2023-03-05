@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="./node_modules//tw-elements/dist/js/index.min.js"></script>
+    <script src="./src/components/layout.js" defer></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./src/assets/fav/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/assets/fav/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="180x180"
+      href="./src/assets/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./src/assets/fav/android-chrome-192x192.png"
+    />
+    <link rel="shortcut icon" href="./src/assets/fav/favicon.ico" />
+    <meta property="og:image" content="./src/assets/fav/favicon-32x32.png" />
+  </head>
+
+  <body>
+    <main class="bg-image flex h-screen items-center justify-between px-4">
+      <div class="container-md mx-auto bg-white px-4 py-10 md:p-20">
+        <div class="grid gap-5 text-center">
+          <div class="block">
+            <a href="#" class="flex items-center justify-center">
+              <img src="./src/assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <h3>Sign up</h3>
+          <form class="form-group grid gap-4" action="">
+            <div class="input-group">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="input w-full rounded-md"
+              />
+            </div>
+            <div class="input-group relative">
+              <input
+                type="password"
+                placeholder="New password"
+                id="txtPassword"
+                class="input relative w-full rounded-md"
+                name="txtPassword"
+              />
+              <button type="button" id="btnToggle" class="passToggle passBtn">
+                <i id="eyeIcon" class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div class="input-group relative">
+              <input
+                type="password"
+                placeholder="Confirm password"
+                id="txtPassword"
+                class="input relative w-full rounded-md"
+                name="txtPassword"
+              />
+              <button type="button" id="btnToggle" class="passToggle passBtn">
+                <i id="eyeIcon" class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div class="block">
+              <button type="button" class="btn bg-primary w-full px-10">
+                Continue
+              </button>
+            </div>
+            <div class="block">
+              <p>
+                I already have an account<a
+                  class="text-secondary pl-2"
+                  href="/sign-in.html"
+                  >Sign in</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/password.js"></script>
+</html>

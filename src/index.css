@@ -56,7 +56,7 @@ label {
   @apply bg-white;
 }
 .form-group input {
-  @apply input input-bordered input-primary !h-10 w-full !border-black bg-white;
+  @apply input input-bordered input-primary !h-10 w-full !border-black bg-white !rounded-md;
 }
 .form-group select {
   @apply input input-bordered input-primary !h-10 !min-h-[40px] !border-black bg-white;
@@ -254,3 +254,40 @@ table tr td {
  .form-check-label{
   @apply !font-normal;
  }
+
+ .bg-image{
+  @apply bg-auth-background bg-cover bg-no-repeat;
+ }
+ .container-md {
+  @apply max-w-screen-md w-[768px] mx-auto px-10;
+ }
+
+ /* suppress IE >= 10 native functionality that can show password */
+input[type="password"]::-ms-reveal {
+  display: none;
+  @apply text-sm;
+}
+.passBtn {
+  margin-top: -1.75em;
+}
+
+.passToggle {
+  background: none;
+  border: none;
+  color: #337ab7;
+  font-weight: 600;
+  position: absolute;
+  right: .75em;
+  top: 2.25em;
+  z-index: 9;
+}
+
+input[type="password"] {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+
+}
+
+.fa {
+  @apply text-black;
+}
