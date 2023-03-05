@@ -11,9 +11,9 @@ module.exports = {
         transparent: "transparent",
       },
       backgroundImage: {
-        "hero-background": "url('/src/assets/images/header-bg.svg')",
-                "auth-background": "url('/src/assets/images/bg.svg')",
-        pattern: "url('/src/assets/images/pattern.svg')",
+        "hero-background": "url('./src/assets/images/header-bg.svg')",
+                "auth-background": "url('./src/assets/images/bg.svg')",
+        pattern: "url('./src/assets/images/pattern.svg')",
       },
       fontFamily: {
       base: ["Rubik", "sans-serif"],
