@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+    <script src="./node_modules//tw-elements/dist/js/index.min.js"></script>
+    <script
+      src="./src/assets/js/sources.js"
+      type="text/javascript"
+      defer
+    ></script>
+            <link rel="apple-touch-icon" sizes="57x57" href="./src/assets/fav/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="./src/assets/fav/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./src/assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="./src/assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./src/assets/fav/android-chrome-192x192.png">
+<link rel="shortcut icon" href="./src/assets/fav/favicon.ico">
+<meta property="og:image" content="./src/assets/fav/favicon-32x32.png">
+  </head>
+
+  <body>
+    <main>
+      <div class="drawer drawer-mobile">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content bg-white">
+          <div class="grid gap-10 p-4 md:py-6 md:px-10">
+            <!-- Navbar -->
+            <nav class="bg-lightGray w-full rounded-md p-1 md:px-10">
+              <div class="block items-center justify-between sm:flex">
+                <div class="flex items-center gap-4">
+                  <label
+                    role="button"
+                    for="my-drawer-2"
+                    class="btn bg-secondary drawer-button border-none lg:hidden"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="12"
+                      viewBox="0 0 18 12"
+                    >
+                      <g
+                        id="Layer_2"
+                        data-name="Layer 2"
+                        transform="translate(-3 -6)"
+                      >
+                        <g id="menu">
+                          <rect
+                            id="Rectangle_1"
+                            data-name="Rectangle 1"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 11)"
+                          />
+                          <rect
+                            id="Rectangle_2"
+                            data-name="Rectangle 2"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 16)"
+                          />
+                          <rect
+                            id="Rectangle_3"
+                            data-name="Rectangle 3"
+                            width="18"
+                            height="2"
+                            rx="0.95"
+                            transform="translate(3 6)"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </label>
+                  <h2 class="text-xl">
+                    Welcome,
+                    <span class="text-secondary text-xl font-bold">Garcia</span>
+                  </h2>
+                </div>
+                <div class="flex items-center justify-end gap-4">
+                  <!-- notification -->
+                  <div class="dropdown dropdown-bottom dropdown-end">
+                    <label tabindex="0" class="btn m-1"
+                      ><img
+                        src="./src/assets/images/notification.svg"
+                        alt="notification icon"
+                    /></label>
+                    <ul
+                      tabindex="0"
+                      class="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+                    >
+                     <li><a href="/signup.html"></a></li>
+                      <li><a href="/signin.html"></a></li>
+                    </ul>
+                  </div>
+                  <!-- settings -->
+                  <div class="dropdown dropdown-bottom dropdown-end text-dark">
+                    <label tabindex="0" class="p-0 pr-2">Settings</label>
+                    <svg
+                      id="Group_4872"
+                      data-name="Group 4872"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20"
+                      height="11.312"
+                      viewBox="0 0 20 11.312"
+                    >
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect
+                            id="Rectangle_4594"
+                            data-name="Rectangle 4594"
+                            width="20"
+                            height="11.312"
+                            transform="translate(0 0)"
+                            fill="none"
+                          />
+                        </clipPath>
+                      </defs>
+                      <g
+                        id="Group_4871"
+                        data-name="Group 4871"
+                        clip-path="url(#clip-path)"
+                      >
+                        <path
+                          id="Path_15114"
+                          data-name="Path 15114"
+                          d="M8.341,10.552a2.188,2.188,0,0,0,3.316,0L19.5,1.842C20.411.825,20.047,0,18.681,0H1.317C-.049,0-.407.833.5,1.842Z"
+                          fill="#1faa9e"
+                        />
+                      </g>
+                    </svg>
+
+                    <ul
+                      tabindex="0"
+                      class="dropdown-content menu rounded-box w-52 bg-white p-2 shadow"
+                    >
+                      <li><a href="/signup.html"></a></li>
+                      <li><a href="/signin.html"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="container-body">
+              <!-- card -->
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <sources-component></sources-component>
+                <sources-component></sources-component>
+              </div>
+
+              <!-- info card -->
+              <div class="mt-10 grid gap-4">
+                <div class="webkit-shadow rounded-md bg-white p-5">
+                  <div class="block">
+                    <div class="flex flex-row gap-4">
+                      <div class="flex-none">
+                        <img
+                          src="./src/assets/images/profile.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div class="flex-auto">
+                        <div class="flex items-center justify-between">
+                          <div class="block">
+                            <h4>Michael Howe</h4>
+                            <p class="text-gray-500">Reddit</p>
+                          </div>
+                          <div class="block">
+                            <p class="text-secondary text-sm">
+                              1:30 pm, 18th jan - 2020
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                          <p>
+                            Hey Redditors, I'm looking to tune up my inbound
+                            marketing for Lintly and thought I'd start with I'd
+                            like to learn from makers how they started their for
+                            their products during the initial phases of their
+                            business.
+                          </p>
+                        </div>
+                        <div class="mt-4 flex gap-4">
+                          <button
+                            class="btn btn-sm bg-secondary min-w-[125px] border-none text-white"
+                          >
+                            Reply
+                          </button>
+                          <button
+                            class="btn btn-sm bg-white !border-secondary !text-black hover:bg-secondary border hover:!text-white"
+                          >
+                            Add to Leads
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="webkit-shadow rounded-md bg-white p-5">
+                  <div class="block">
+                    <div class="flex flex-row gap-4">
+                      <div class="flex-none">
+                        <img
+                          src="./src/assets/images/profile.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div class="flex-auto">
+                        <div class="flex items-center justify-between">
+                          <div class="block">
+                            <h4>Michael Howe</h4>
+                            <p class="text-gray-500">Reddit</p>
+                          </div>
+                          <div class="block">
+                            <p class="text-secondary text-sm">
+                              1:30 pm, 18th jan - 2020
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                          <p>
+                            Hey Redditors, I'm looking to tune up my inbound
+                            marketing for Lintly and thought I'd start with I'd
+                            like to learn from makers how they started their for
+                            their products during the initial phases of their
+                            business.
+                          </p>
+                        </div>
+                        <div class="mt-4 flex gap-4">
+                          <button
+                            class="btn btn-sm bg-secondary min-w-[125px] border-none text-white"
+                          >
+                            Reply
+                          </button>
+                          <button
+                            class="btn btn-sm bg-white !border-secondary !text-black hover:bg-secondary border hover:!text-white"
+                          >
+                            Add to Leads
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="webkit-shadow rounded-md bg-white p-5">
+                  <div class="block">
+                    <div class="flex flex-row gap-4">
+                      <div class="flex-none">
+                        <img
+                          src="./src/assets/images/profile.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div class="flex-auto">
+                        <div class="flex items-center justify-between">
+                          <div class="block">
+                            <h4>Michael Howe</h4>
+                            <p class="text-gray-500">Reddit</p>
+                          </div>
+                          <div class="block">
+                            <p class="text-secondary text-sm">
+                              1:30 pm, 18th jan - 2020
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                          <p>
+                            Hey Redditors, I'm looking to tune up my inbound
+                            marketing for Lintly and thought I'd start with I'd
+                            like to learn from makers how they started their for
+                            their products during the initial phases of their
+                            business.
+                          </p>
+                        </div>
+                        <div class="mt-4 flex gap-4">
+                          <button
+                            class="btn btn-sm bg-secondary min-w-[125px] border-none text-white"
+                          >
+                            Reply
+                          </button>
+                          <button
+                            class="btn btn-sm bg-white !border-secondary !text-black hover:bg-secondary border hover:!text-white"
+                          >
+                            Add to Leads
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="webkit-shadow rounded-md bg-white p-5">
+                  <div class="block">
+                    <div class="flex flex-row gap-4">
+                      <div class="flex-none">
+                        <img
+                          src="./src/assets/images/profile.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div class="flex-auto">
+                        <div class="flex items-center justify-between">
+                          <div class="block">
+                            <h4>Michael Howe</h4>
+                            <p class="text-gray-500">Reddit</p>
+                          </div>
+                          <div class="block">
+                            <p class="text-secondary text-sm">
+                              1:30 pm, 18th jan - 2020
+                            </p>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                          <p>
+                            Hey Redditors, I'm looking to tune up my inbound
+                            marketing for Lintly and thought I'd start with I'd
+                            like to learn from makers how they started their for
+                            their products during the initial phases of their
+                            business.
+                          </p>
+                        </div>
+                        <div class="mt-4 flex gap-4">
+                          <button
+                            class="btn btn-sm bg-secondary min-w-[125px] border-none text-white"
+                          >
+                            Reply
+                          </button>
+                          <button
+                            class="btn btn-sm bg-white !border-secondary !text-black hover:bg-secondary border hover:!text-white"
+                          >
+                            Add to Leads
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-2" class="drawer-overlay"></label>
+          <ul class="menu text-dark bg-primary w-64 p-4">
+            <!-- Sidebar content here -->
+            <a href="#" class="flex items-center justify-center pb-10 pt-5">
+              <img src="./src/assets/images/logo.svg" alt="logo" />
+            </a>
+            <div class="sidebarnav flex flex-col justify-between">
+              <aside>
+                <ul>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="home.html"
+                    >
+                      <img src="./src/assets/images/home.svg" alt="home icon" />
+                      <span class="mx-2 font-medium">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="leads.html"
+                    >
+                      <img
+                        src="./src/assets/images/leads.svg"
+                        alt="leads icon"
+                      />
+                      <span class="mx-2 font-medium">Leads</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center rounded-md px-4 py-2 text-white"
+                      href="tips-faq.html"
+                    >
+                      <img
+                        src="./src/assets/images/tips.svg"
+                        alt="tips & faq icon"
+                      />
+                      <span class="mx-2 font-medium">Tips & FAQs</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="active flex items-center rounded-md px-4 py-2 text-white"
+                      href="index.html"
+                    >
+                      <img
+                        src="./src/assets/images/project.svg"
+                        alt="project icon"
+                      />
+                      <span class="mx-2 font-medium">Projects</span>
+                    </a>
+                  </li>
+                </ul>
+                <hr class="border-secondary my-4" />
+                <div class="absolute bottom-4">
+                  <ul>
+                    <li>
+                      <a
+                        class="flex items-center rounded-md px-4 py-2 text-white"
+                        href="add-project.html"
+                      >
+                        <img src="./src/assets/images/add.svg" alt="add icon" />
+                        <span class="mx-2 font-medium">Add project</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex items-center rounded-md px-4 py-2 text-white"
+                        href="edit-project.html"
+                      >
+                        <img
+                          src="./src/assets/images/edit.svg"
+                          alt="edit icon"
+                        />
+                        <span class="mx-2 font-medium">Edit project</span>
+                      </a>
+                    </li>
+                    <hr class="border-secondary my-4" />
+                    <li>
+                      <a
+                        class="flex items-center rounded-md px-4 py-2 text-white"
+                        href="#"
+                      >
+                        <img
+                          src="./src/assets/images/email.svg"
+                          alt="email icon"
+                        />
+                        <span class="mx-2 font-medium">Support via email</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+</html>
